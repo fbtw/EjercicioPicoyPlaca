@@ -102,15 +102,15 @@ public class PicoPlaca extends AppCompatActivity {
         });
     }
 
-    private String getDiaSemana(Calendar calendario){
+    protected static String getDiaSemana(Calendar calendario){
         //Siendo el primer día de la semana martes (1)
         switch (calendario.get(Calendar.DAY_OF_WEEK)){
             case 7: return "Lunes";
             case 1: return "Martes";
-            case 2: return "Miercoles";
+            case 2: return "Miércoles";
             case 3: return "Jueves";
             case 4: return "Viernes";
-            case 5: return "sábado";
+            case 5: return "Sábado";
             case 6: return "Domingo";
         }
         return null;
